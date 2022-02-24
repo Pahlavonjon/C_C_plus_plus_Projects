@@ -12,7 +12,7 @@ void Case_Function_X(int *user_input_validity, int row, int column , int Case , 
         //int user_element_selection_X_p = *user_element_selection_X;
         //*tic_tac_toe_array[array_width_height][array_width_height];
         //*tic_tac_toe_array_current_vacancy[array_width_height][array_width_height];
-        if (tic_tac_toe_array_current_vacancy[row][column] == Case && *user_element_selection_X == Case){
+        if (tic_tac_toe_array_current_vacancy[row][column] == 1 && *user_element_selection_X == Case){
             printf("\n Invalid select from the numbers in the array: \n\n");
         for (int P = 0; P < 5; P++){
         for (int R = 0; R < 5; R++){
@@ -59,7 +59,7 @@ void Case_Function_O(int *user_input_validity_O,int row, int column, int Case,in
     *user_input_validity_O = 0;
     //&tic_tac_toe_array[array_width_height][array_width_height];
     //&tic_tac_toe_array_current_vacancy[array_width_height][array_width_height];
-     if (tic_tac_toe_array_current_vacancy[row][column] == Case && *user_element_selection_O == Case){
+     if (tic_tac_toe_array_current_vacancy[row][column] == 1 && *user_element_selection_O == Case){
             printf("\n Invalid select from the numbers in the array: \n\n");
         for (int P = 0; P < 5; P++){
         for (int R = 0; R < 5; R++){
@@ -297,7 +297,10 @@ int main(void){
         printf("\n Invalid select from the numbers in the array: \n\n");
     for (int P = 0; P < 5; P++){
         for (int R = 0; R < 5; R++){
-            if (tic_tac_toe_array[P][R] < 10){
+            if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
+                printf("  %c",tic_tac_toe_array[P][R]);
+            }
+            else if (tic_tac_toe_array[P][R] < 10){
                 printf("  %d",tic_tac_toe_array[P][R]);
             }
             else {
