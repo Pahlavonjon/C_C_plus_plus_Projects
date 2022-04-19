@@ -98,16 +98,6 @@ void print_array_10D(long long int **********array,int array_length, int array_w
 }
 
 int main(){
-    // double array_stack[1000000] = {0};
-    // cout <<"\n The size of the stack is: "<<((sizeof(array_stack))*0.000001)<<" MBs\n";
-    // double* array_heap = new double[1000000000];
-    // for (int k = 0; k < 1000000000; k++){
-    //     array_heap[k] = 1;
-    // }
-    // cout <<"\n The size of the heap is: "<<((sizeof(array_heap)))<<" GBs\n\n";
-
-
-
     int array_row = 0;
     int array_column = 0;
     int incrementor = 10;
@@ -357,30 +347,4 @@ int main(){
 
     delete[] Ten_D_array;
 
-
-
-
-
-
-
-    // for (int h = 0; h < array_row; h++){
-    //     for (int j = 0; j < array_column; j++){
-    //         cout << Two_D_array[h][j]<< " ";
-    //     }
-    //     cout <<"\n";
-    // }
-
-
-
-
-
-
-
-    // string user_reply;
-    // cout <<"\n Do you want to try 3D array?\n";
-    // getline(cin,user_reply);
-    // cout <<"\n Your response was:  "<<user_reply<<" \n\n";
-    // if (user_reply == "yes "){
-    //     cout <<"\n OKAY \n\n";
-    // }
 }
