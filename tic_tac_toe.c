@@ -4,14 +4,8 @@
 #include <ctype.h> 
 
 int main(void){
-
-    // int bingo_one_O = 0;
-    // int bingo_one_X = 0;
-    // int bingo_two_O = 0;
-    // int bingo_two_X = 0;
+    
     int game_over_one = 0;
-    // int game_over_two = 0;
-
     int tic_tac_toe_array[3][3];
     for (int P = 0; P < 3; P++){
         for (int R = 0; R < 3; R++){
@@ -21,8 +15,7 @@ int main(void){
     char user_one_X_or_O_selection[2];
     char user_two_X_or_O_selection[2];
     char X[2] = {'X','\0'};
-    char O[2] = {'O','\0'};
-    // char chosen_symbol[2];                   
+    char O[2] = {'O','\0'};                  
     int row_selection;      
     int column_selection;                                                                      
     // player 1
@@ -34,7 +27,7 @@ int main(void){
     else if (user_one_X_or_O_selection[0] == 'o'){
         user_one_X_or_O_selection[0] = user_one_X_or_O_selection[0] -32;
     }
-    else (printf("\n Invalid\n\n"));                                                 // your up to this area of the code
+    else (printf("\n Invalid\n\n"));                                             
     // player 2
     printf(" Player 2 select X or O, X goes first\n");
     scanf("%1s",user_two_X_or_O_selection);
@@ -48,15 +41,7 @@ int main(void){
     int capital_O = strcmp(user_one_X_or_O_selection,O);
     int capital_X_two = strcmp(user_two_X_or_O_selection,X); // player 2
     int capital_O_two = strcmp(user_two_X_or_O_selection,O);
-    // int player_one_selection;
-    // int player_two_selection;
-    // toupper(user_X_or_O_selection);
-    // int bingo = 0;
-    // int bingo_two = 0;
-    // int game_over = 0;
-    // 1 means X and 0 means O
     while (game_over_one == 0){
-    // while (game_over_two == 0){
     if (capital_X == 0){
         for (int P = 0; P < 3; P++){
         for (int R = 0; R < 3; R++){
@@ -164,7 +149,6 @@ int main(void){
         tic_tac_toe_array[row_selection-1][column_selection-1] = 'O';
         // player_two_selection = 0;
     }
-    // }
     // Horizontal bingo
     if ((tic_tac_toe_array[0][0] == 'X' && tic_tac_toe_array[0][1] == 'X' && tic_tac_toe_array[0][2] == 'X') ||
         (tic_tac_toe_array[1][0] == 'X' && tic_tac_toe_array[1][1] == 'X' && tic_tac_toe_array[1][2] == 'X') ||
