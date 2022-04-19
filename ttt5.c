@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-// There is a bug at the beginning in the way it prints out the array when the user selects the same element, this is the only known error in the code
+
 int main(void){
     int game_over_one = 0;
     int draw_official = 0;
