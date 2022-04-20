@@ -8,91 +8,91 @@
 void Case_Function_X(int *user_input_validity, int row, int column , int Case , int *user_element_selection_X, int *user_element_selection_O,int tic_tac_toe_array[5][5],int tic_tac_toe_array_current_vacancy[5][5]){                                                                     
         *user_input_validity = 0;
         if (tic_tac_toe_array_current_vacancy[row][column] == 1 && *user_element_selection_X == Case){
-            printf("\n Invalid select from the numbers in the array: \n\n");
+        printf("\n Invalid select from the numbers in the array: \n\n");
         for (int P = 0; P < 5; P++){
-        for (int R = 0; R < 5; R++){
-            if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
-                printf("  %c",tic_tac_toe_array[P][R]);
+            for (int R = 0; R < 5; R++){
+                if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
+                    printf("  %c",tic_tac_toe_array[P][R]);
+                }
+                else if (tic_tac_toe_array[P][R] < 10){
+                    printf("  %d",tic_tac_toe_array[P][R]);
+                }
+                else {
+                    printf(" %d",tic_tac_toe_array[P][R]);
+                }
             }
-            else if (tic_tac_toe_array[P][R] < 10){
-                printf("  %d",tic_tac_toe_array[P][R]);
-            }
-            else {
-                printf(" %d",tic_tac_toe_array[P][R]);
-            }
-        }
-        printf("\n");
+            printf("\n");
         }
         scanf("%d",user_element_selection_X);
         while (*user_element_selection_X > 25 || *user_element_selection_X < 1 || *user_element_selection_X == *user_element_selection_O || *user_element_selection_X == Case){                                                                                  
         printf("\n Invalid select from the numbers in the array: \n\n");
         for (int P = 0; P < 5; P++){
-        for (int R = 0; R < 5; R++){
-            if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
-                printf("  %c",tic_tac_toe_array[P][R]);
+            for (int R = 0; R < 5; R++){
+                if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
+                    printf("  %c",tic_tac_toe_array[P][R]);
+                }
+                else if (tic_tac_toe_array[P][R] < 10){
+                    printf("  %d",tic_tac_toe_array[P][R]);
+                }
+                else {
+                    printf(" %d",tic_tac_toe_array[P][R]);
+                }
             }
-            else if (tic_tac_toe_array[P][R] < 10){
-                printf("  %d",tic_tac_toe_array[P][R]);
+            printf("\n");
             }
-            else {
-                printf(" %d",tic_tac_toe_array[P][R]);
+            scanf("%d",user_element_selection_X);
             }
-        }
-        printf("\n");
-        }
-        scanf("%d",user_element_selection_X);
-        }
         }
         else {
         tic_tac_toe_array[row][column] = 'X';
         tic_tac_toe_array_current_vacancy[row][column] = 1;
         *user_input_validity = 1;
-        }
+    }
  }
 
 void Case_Function_O(int *user_input_validity_O,int row, int column, int Case,int *user_element_selection_X,int *user_element_selection_O,int tic_tac_toe_array[5][5],int tic_tac_toe_array_current_vacancy[5][5]){
     *user_input_validity_O = 0;
      if (tic_tac_toe_array_current_vacancy[row][column] == 1 && *user_element_selection_O == Case){
-            printf("\n Invalid select from the numbers in the array: \n\n");
+        printf("\n Invalid select from the numbers in the array: \n\n");
         for (int P = 0; P < 5; P++){
-        for (int R = 0; R < 5; R++){
-            if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
-                printf("  %c",tic_tac_toe_array[P][R]);
+            for (int R = 0; R < 5; R++){
+                if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
+                    printf("  %c",tic_tac_toe_array[P][R]);
+                }
+                else if (tic_tac_toe_array[P][R] < 10){
+                    printf("  %d",tic_tac_toe_array[P][R]);
+                }
+                else {
+                    printf(" %d",tic_tac_toe_array[P][R]);
+                }
             }
-            else if (tic_tac_toe_array[P][R] < 10){
-                printf("  %d",tic_tac_toe_array[P][R]);
-            }
-            else {
-                printf(" %d",tic_tac_toe_array[P][R]);
-            }
-        }
-        printf("\n");
+            printf("\n");
         }
         scanf("%d",user_element_selection_O);
         while (*user_element_selection_O > 25 || *user_element_selection_O < 1 || *user_element_selection_O == *user_element_selection_X || *user_element_selection_O == Case){                                                                                  
         printf("\n Invalid select from the numbers in the array: \n\n");
         for (int P = 0; P < 5; P++){
-        for (int R = 0; R < 5; R++){
-            if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
-                printf("  %c",tic_tac_toe_array[P][R]);
+            for (int R = 0; R < 5; R++){
+                if (tic_tac_toe_array[P][R] == 'X' || tic_tac_toe_array[P][R] == 'O'){
+                    printf("  %c",tic_tac_toe_array[P][R]);
+                }
+                else if (tic_tac_toe_array[P][R] < 10){
+                    printf("  %d",tic_tac_toe_array[P][R]);
+                }
+                else {
+                    printf(" %d",tic_tac_toe_array[P][R]);
+                }
             }
-            else if (tic_tac_toe_array[P][R] < 10){
-                printf("  %d",tic_tac_toe_array[P][R]);
+            printf("\n");
             }
-            else {
-                printf(" %d",tic_tac_toe_array[P][R]);
+            scanf("%d",user_element_selection_O);
             }
-        }
-        printf("\n");
-        }
-        scanf("%d",user_element_selection_O);
-        }
         }
         else {
         tic_tac_toe_array[row][column] = 'O';
         tic_tac_toe_array_current_vacancy[row][column] = 1;
         *user_input_validity_O = 1;
-        }
+    }
  }
 
 int main(void){
@@ -153,83 +153,81 @@ int main(void){
     while (user_input_validity == 0){
     switch (user_element_selection_X){
         case 1:
-        Case_Function_X(&user_input_validity,0,0,1,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,0,0,1,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 2:
-        Case_Function_X(&user_input_validity,0,1,2,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,0,1,2,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 3:
-        Case_Function_X(&user_input_validity,0,2,3,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,0,2,3,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 4:
-        Case_Function_X(&user_input_validity,0,3,4,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,0,3,4,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 5:
-        Case_Function_X(&user_input_validity,0,4,5,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,0,4,5,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 6:
-        Case_Function_X(&user_input_validity,1,0,6,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,1,0,6,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 7:
-        Case_Function_X(&user_input_validity,1,1,7,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,1,1,7,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 8:
-        Case_Function_X(&user_input_validity,1,2,8,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,1,2,8,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 9:
-        Case_Function_X(&user_input_validity,1,3,9,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,1,3,9,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 10:
-        Case_Function_X(&user_input_validity,1,4,10,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,1,4,10,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 11:
-        Case_Function_X(&user_input_validity,2,0,11,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,2,0,11,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 12:
-        Case_Function_X(&user_input_validity,2,1,12,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,2,1,12,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 13:
-        Case_Function_X(&user_input_validity,2,2,13,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,2,2,13,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 14:
-        Case_Function_X(&user_input_validity,2,3,14,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,2,3,14,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 15:
-        Case_Function_X(&user_input_validity,2,4,15,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,2,4,15,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 16:
-        Case_Function_X(&user_input_validity,3,0,16,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,3,0,16,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 17:
-        Case_Function_X(&user_input_validity,3,1,17,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,3,1,17,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 18:
-        Case_Function_X(&user_input_validity,3,2,18,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,3,2,18,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 19:
-        Case_Function_X(&user_input_validity,3,3,19,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,3,3,19,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 20:
-        Case_Function_X(&user_input_validity,3,4,20,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,3,4,20,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 21:
-        Case_Function_X(&user_input_validity,4,0,21,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,4,0,21,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 22:
-        Case_Function_X(&user_input_validity,4,1,22,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,4,1,22,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 23:
-        Case_Function_X(&user_input_validity,4,2,23,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,4,2,23,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 24:
-        Case_Function_X(&user_input_validity,4,3,24,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_X(&user_input_validity,4,3,24,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 25:
-        Case_Function_X(&user_input_validity,4,4,25,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-      
+            Case_Function_X(&user_input_validity,4,4,25,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
     }
-
-
     }
     
     int draw_X = 1; // when equal to 25 the game ends in a draw
@@ -309,80 +307,80 @@ int main(void){
     while (user_input_validity_O == 0){     
     switch (user_element_selection_O){
         case 1:
-        Case_Function_O(&user_input_validity_O,0,0,1,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,0,0,1,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 2:
-        Case_Function_O(&user_input_validity_O,0,1,2,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,0,1,2,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 3:
-        Case_Function_O(&user_input_validity_O,0,2,3,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,0,2,3,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 4:
-        Case_Function_O(&user_input_validity_O,0,3,4,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,0,3,4,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 5:
-        Case_Function_O(&user_input_validity_O,0,4,5,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,0,4,5,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 6:
-        Case_Function_O(&user_input_validity_O,1,0,6,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,1,0,6,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 7:
-        Case_Function_O(&user_input_validity_O,1,1,7,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,1,1,7,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 8:
-        Case_Function_O(&user_input_validity_O,1,2,8,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,1,2,8,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 9:
-        Case_Function_O(&user_input_validity_O,1,3,9,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,1,3,9,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 10:
-        Case_Function_O(&user_input_validity_O,1,4,10,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,1,4,10,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 11:
-        Case_Function_O(&user_input_validity_O,2,0,11,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,2,0,11,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 12:
-        Case_Function_O(&user_input_validity_O,2,1,12,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,2,1,12,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 13:
-        Case_Function_O(&user_input_validity_O,2,2,13,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,2,2,13,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 14:
-        Case_Function_O(&user_input_validity_O,2,3,14,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,2,3,14,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 15:
-        Case_Function_O(&user_input_validity_O,2,4,15,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,2,4,15,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 16:
-        Case_Function_O(&user_input_validity_O,3,0,16,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,3,0,16,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 17:
-        Case_Function_O(&user_input_validity_O,3,1,17,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,3,1,17,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 18:
-        Case_Function_O(&user_input_validity_O,3,2,18,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,3,2,18,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 19:
-        Case_Function_O(&user_input_validity_O,3,3,19,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,3,3,19,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 20:
-        Case_Function_O(&user_input_validity_O,3,4,20,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,3,4,20,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 21:
-        Case_Function_O(&user_input_validity_O,4,0,21,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,4,0,21,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 22:
-        Case_Function_O(&user_input_validity_O,4,1,22,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,4,1,22,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 23:
-        Case_Function_O(&user_input_validity_O,4,2,23,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,4,2,23,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 24:
-        Case_Function_O(&user_input_validity_O,4,3,24,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,4,3,24,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
         case 25:
-        Case_Function_O(&user_input_validity_O,4,4,25,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
-        break;
+            Case_Function_O(&user_input_validity_O,4,4,25,&user_element_selection_X,&user_element_selection_O,tic_tac_toe_array,tic_tac_toe_array_current_vacancy);
+            break;
       
     }
     }
@@ -480,4 +478,4 @@ int main(void){
         }
         printf("\n\n Its a draw...\n\n");
     }
-    }
+}
